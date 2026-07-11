@@ -9,7 +9,7 @@ public class ContainsDuplicate {
         Set<Integer> set = new HashSet<>();
         boolean containsDuplicate = false;
         for(int num: nums){
-            if(!set.add(num)){
+            if(!set.add(num)){  // The set.add Will return false if the element is already present. Then skip the loop and return as contains duplicate
                 containsDuplicate = true;
                 break;
             }
